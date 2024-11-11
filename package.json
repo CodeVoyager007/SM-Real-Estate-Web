@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "npm install --legacy-peer-deps && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@mui/icons-material": "^6.1.6",
+    "@mui/material": "^6.1.6",
+    "@emotion/react": "^11.5.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@react-three/drei": "^9.115.0",
     "@react-three/fiber": "^8.17.10",
